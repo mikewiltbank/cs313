@@ -1,0 +1,22 @@
+/* wiltbank02.css */
+
+.divone {
+	background-color: #33FF9D;
+	font-size: 3em;
+}
+
+.divtwo .divthree {
+	font-size: 2em;
+}
+
+#div2 {
+	background-color: #EEFF33;
+}
+
+#div3 {
+	background-color: #E53E3E;
+}
+
+.hover-bold:hover {
+	font-weight: bold;
+}

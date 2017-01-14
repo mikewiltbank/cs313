@@ -1,0 +1,56 @@
+/* wiltbankhome.css */
+body {
+    background-image: url("brushed.png");
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#logo {
+	height: 40px;
+	padding: 0px 0px 10px 0px;
+}
+
+.assignmentlist {
+	font-size: 16px;
+}
+
+.kidpic {
+	width:100%;
+}
+
+.panel-title {
+	text-align: center;
+}
+
+.providerTable {
+	width:100%;
+}
+.providerTable td{
+	padding:10px;
+}
+
+.footer {
+	color: white;
+	padding-top: 10px;
+	background-color:#3ED3E5;
+} 
+
+#colorize {
+	display:none;
+}
+
+#bio {
+	font-size: 17px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.centerred {
+	margin: auto;
+}
+
+.hover-bold:hover {
+	font-weight: bold;
+}

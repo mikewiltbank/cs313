@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wiltbank About Me</title>
+		<link rel="stylesheet" type="text/css" href="wiltbankhome.css">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#fadetoggle').on('click', function() {
+					$('#colorize').fadeToggle(1000);
+				});
+
+				$('#changecolor').on('click', function() {
+					$('.all').css("background-color", $('#txtColor').val());
+				}); 
+			});
+		</script>
+	</head>
+
+	<div class="all">
+	<body>
+		<div class="container">
+
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="wiltbankhome.html">
+			      	<img src="msw.png" alt="MSW" id="logo">
+			      </a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li><a href="wiltbankhome.html">Home</a></li>
+			        <li class="active"><a href="aboutme.html">About Me <span class="sr-only">(Current)</span></a></li>
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assignments<span class="caret"></span></a>
+			          	<ul class="dropdown-menu">
+						  	<li><a href="week01/hello.html">Week 01</a></li>
+							<li><a href="week02/wiltbank02.html">Week 02</a></li>
+							<li><a href="#">Week 03</a></li>
+							<li><a href="#">Week 04</a></li>
+							<li><a href="#">Week 05</a></li>
+							<li><a href="#">Week 06</a></li>
+							<li><a href="#">Week 07</a></li>
+							<li><a href="#">Week 08</a></li>
+							<li><a href="#">Week 09</a></li>
+							<li><a href="#">Week 10</a></li>
+							<li><a href="#">Week 11</a></li>
+							<li><a href="#">Week 12</a></li>
+							<li><a href="#">Week 13</a></li>
+						</ul>
+			        </li>
+			      </ul>
+
+			      <!--
+			      <ul class="nav navbar-nav navbar-right">
+				    <li><a href="employeeportal.html"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span>Employee Portal</a></li>
+				    <form class="navbar-form navbar-left">
+				      <div class="form-group">
+				        <input type="text" class="form-control" placeholder="Search">
+				      </div>
+				      <button type="submit" class="btn btn-default">Submit</button>
+				    </form> -->
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav><!-- /navbar -->
+
+
+			<div class="row">
+				<div class='content-row'>
+					<div class="col-sm-4">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="media">
+								  	<div class="media-body">
+								    	<a href="#">
+								      		<img class="media-object kidpic" src="AshandI.png" alt="Wiltbank Family">
+								    	</a>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="panel panel-default"> <!-- primary info warning -->
+							<div class="panel-body" id="bio">
+								My name is Michael Wiltbank. I grew up in the White Mountains of Arizona. I served a mission
+								in the Santa Rosa California Mission. Afterwards I went to college at ASU and got my bachelors 
+								in Family and Human Devlopment. While at college I met my wife Ashley Wiltbank and had our first
+								child. Shortly after Grant had joined our family I knew I did not want to raise a kid in the city 
+								so we moved back to our small hometown. <br><br>
+								Four kids and five years later I realized I needed to further my education. First I completed 
+								the Pathway program and am now working on my degree in software engineering. With the help of my wife
+								who currently works part time as a nurse, we are able to make it all work.<br><br>
+								We are loving life and looking forward to our future. Right now my wife is pregnant and we cannot
+								wait to meet the newest member of our growing family!<br><br>
+							</div>
+						</div>
+					</div> 
+				</div><!-- /content-row -->
+			</div><!-- /row -->
+
+		   	<div class="footer col-sm-12">
+		   		<!--<div class="container">-->
+			   		<div class="col-sm-4">
+			   			<address>
+						  	<strong>Contact Info</strong><br>
+						  	PO Box 213 Eagar, AZ 85925<br>
+						  	<abbr title="Phone">Phone:</abbr> (928) 245-0481 <br>
+						  	<abbr title="Email">Email:</abbr> mikewiltbank@gmail.com
+						</address>
+			   		</div>
+			   		<div class="col-sm-4 text-center">
+						<div class="media">
+						  	<div class="media-body">
+						    	<a href="#">
+						      		<img class="media-object kidpic" src="familylogo.png" alt="Wiltbanks!">
+						    	</a>
+						  	</div>
+						</div>
+			   		</div>
+			   		<div class="col-sm-4 text-right">
+				  		Michael Wiltbank<br>
+				  		Web Engineering II<br>
+				    	CS 313 | Brother Lyon<br>
+				    	Copyright 2016<br>
+			   		</div>
+			   	
+			</div><!-- end footer -->	
+
+			<div class="center">
+				<div id="colorize">
+					<label for="txtColor">Background Color:</label> <input type="text" id="txtColor" placeholder="#cccccc">
+					<button id="changecolor">Change</button><br/>
+				</div>
+				<button id="fadetoggle">Click if you think this page is to plain</button>
+			</div>
+			
+		</div><!-- End Container -->
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</body>
+	</div><!-- End Class all -->
+</html>
