@@ -1,12 +1,9 @@
 <?php 
-	if(isset($_POST['submit'])){
 		$name = $_POST['boyname'];
-		$email = $_POST['director'];
-		$major = $_POST['major'];
-		$comments = $_POST['comments'];
-		$continents = $_POST['continent'];
-	}
-
+		$director = $_POST['director'];
+		$season = $_POST['season'];
+		$cake = $_POST['cake'];
+/*
 if ($name == "Orson") {
 	$_SESSION["orson"] = $_SESSION["orson"] + 1;
 }
@@ -17,6 +14,7 @@ if ($name == "Clyde") {
 	$_SESSION["clyde"] = $_SESSION["clyde"] + 1;
 
 }
+*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,11 +22,13 @@ if ($name == "Clyde") {
 	<title>Survey</title>
 </head>
 <body>
-		<label>I should name my newborn son:</label>
-		<p>Orson =<?php echo $_SESSION["orson"]; ?></p>
-</body>
-</html>
-
-
+		<label>I should name my newborn son:</label><br>
+		<p><?php echo $name; ?></p><br>
+		<label>The best director is:</label><br>
+		<p><?php echo $director; ?></p><br>
+		<label>Your favorite season was:</label><br>
+		<p><?php echo $season; ?></p><br>
+		<label>This assignment was:</label><br>
+		<p><?php echo $cake; ?></p><br>
 </body>
 </html>
