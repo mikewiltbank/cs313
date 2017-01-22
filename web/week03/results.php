@@ -28,7 +28,7 @@ if ($name == "Clyde") {
 		<p><?php echo $director; ?></p><br>
 		<label>Your favorite season was:</label><br>
 		<p><?php echo $season; ?></p><br>
-		<label>This assignment was:</label><br>
+		<label>This assignment was easy:</label><br>
 		<p><?php echo $cake; ?></p><br>
 </body>
 </html>
