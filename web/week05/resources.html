@@ -1,3 +1,8 @@
+<?php
+require("dbConnect.php");
+$db = get_db();
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -75,6 +80,13 @@
 							<h3 class="panel-title text-center">Community Resources</h3>
 						</div>
 						<div class="panel-body">
+							<?php
+							foreach ($db->query('SELECT * FROM publicresource') as $row)
+							{
+							  echo '<li><a href\="'.$row['link'].'">'.$row['name'].'</a></li>';
+							}
+
+							?>
 							<ul class="list-default">
 							  	<li><a href="http://www.azdhs.gov/">Arizona Department of Health Services</a></li>
 								<li><a href="http://www.azahcccs.gov/">Arizona Health Care Cost Containment System (AHCCCS)</a></li>
@@ -100,6 +112,13 @@
 						</div>
 						<div class="panel-body">
 							<ul class="list-default">
+								<?php
+								foreach ($db->query('SELECT * FROM localresource') as $row)
+								{
+								  echo '<li>'$row['name'].' Phone: '.$row['phone'].' Address: '.$row['address'].'</li>';
+								}
+								?>
+								
 								<li><a href="http://www.suicidepreventionlifeline.org/">Suicide Prevention Lifeline</a></li>
 								<li><a href="http://www.ashline.org/">Arizona Smokers&#39 Helpline</a></li>
 								<li><a href="http://www.dbsalliance.org/">Depression & Bipolar Support Alliance</a></li>
