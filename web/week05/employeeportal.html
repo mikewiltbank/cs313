@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="homeStyle.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+  <body>
+    <div class="container">
+      <h1 class="text-left">
+          <a href="index.html"><img src="fullLogo.png" alt="LITTLE COLORADO Behavioral Health Centers" style="height:60px; padding: 0 0 0px 0;"></a>
+        </h1>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img src="logo.png" alt="LCBHC" style="height:30px; padding:0px 5px;">
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="careandservices.html">Care & Services</a></li>
+              <li><a href="insuranceandpayment.html">Insurance & Payment</a></li>
+              <li><a href="jobopenings.html">Job Openings</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <!--
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              -->
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="employeeportal.html"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span>Employee Portal<span class="sr-only">(current)</span></a></li>
+            <!--<form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form> -->
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav><!-- /navbar -->
+
+<!-- Portal Entrance -->
+
+	<h3>PROTECTED: EMPLOYEE PORTAL</h3>
+
+	<p>This content is password protected. To view it please enter your password below:</p>
+
+    <form id="signin" role="form">
+
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+        </div><br>
+
+        <button type="submit" class="btn btn-primary" onclick="alert('Incorrect Password')">Enter</button>
+    </form>
+    <br><br><br>
+<!-- /Portal Entrance -->
+
+<!-- Suggestion 
+
+<div class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name
+<legend>Contact Us Today!</legend>
+
+<!-- Text input
+
+<div class="form-group">
+  <label class="col-md-4 control-label">First Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Last Name</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input
+      
+<div class="form-group">
+  <label class="col-md-4 control-label">Address</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="address" placeholder="Address" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input
+ 
+<div class="form-group">
+  <label class="col-md-4 control-label">City</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="city" placeholder="city" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Select Basic
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">State</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >Please select your state</option>
+      <option>Alabama</option>
+      <option>Alaska</option>
+      <option >Arizona</option>
+      <option >Arkansas</option>
+      <option >California</option>
+      <option >Colorado</option>
+      <option >Connecticut</option>
+      <option >Delaware</option>
+      <option >District of Columbia</option>
+      <option> Florida</option>
+      <option >Georgia</option>
+      <option >Hawaii</option>
+      <option >daho</option>
+      <option >Illinois</option>
+      <option >Indiana</option>
+      <option >Iowa</option>
+      <option> Kansas</option>
+      <option >Kentucky</option>
+      <option >Louisiana</option>
+      <option>Maine</option>
+      <option >Maryland</option>
+      <option> Mass</option>
+      <option >Michigan</option>
+      <option >Minnesota</option>
+      <option>Mississippi</option>
+      <option>Missouri</option>
+      <option>Montana</option>
+      <option>Nebraska</option>
+      <option>Nevada</option>
+      <option>New Hampshire</option>
+      <option>New Jersey</option>
+      <option>New Mexico</option>
+      <option>New York</option>
+      <option>North Carolina</option>
+      <option>North Dakota</option>
+      <option>Ohio</option>
+      <option>Oklahoma</option>
+      <option>Oregon</option>
+      <option>Pennsylvania</option>
+      <option>Rhode Island</option>
+      <option>South Carolina</option>
+      <option>South Dakota</option>
+      <option>Tennessee</option>
+      <option>Texas</option>
+      <option> Uttah</option>
+      <option>Vermont</option>
+      <option>Virginia</option>
+      <option >Washington</option>
+      <option >West Virginia</option>
+      <option>Wisconsin</option>
+      <option >Wyoming</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Text input
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Zip Code</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+    </div>
+</div>
+</div>
+
+<!-- Text input
+<div class="form-group">
+  <label class="col-md-4 control-label">Website or domain name</label>  
+   <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+  <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- radio checks
+ <div class="form-group">
+                        <label class="col-md-4 control-label">Do you have hosting?</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="yes" /> Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="no" /> No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Text area 
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Project Description</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Success message 
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+<!-- Button 
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+
+<!--
+    <p>
+  In the technical workplace, products break and errors happen. In these situations, you may need to write a claim, also called a complaint. The purpose of a claim is to explain a problem and ask for amends. Here are some guidelines to follow when writing a claim: <br><br>
+
+  State the subject and purpose clearly and concisely.<br>
+  Explain the problem in detail.<br>
+  Describe how the problem inconvenienced you.<br>
+  State what you would like the receiver to do to address the problem.<br>
+  Thank your reader for his or her response to your request.<br>
+  Provide contact information.<br>
+  A claim should always be professional in tone. Angry letters, memos, and email messages might give you a temporary sense of satisfaction, but they are less likely to achieve your purpose—to have the problem fixed. If possible, you want to avoid putting readers on the defensive, because they may choose to ignore you or halfheartedly try to remedy the situation.
+  </p>
+  -->
+
+
+    </div><!-- /.container -->
+
+    <div class="footer">
+      <div class="container" style="color:white;">
+        <div class="col-sm-4">
+          <address>
+            <strong>Springerville Office</strong><br>
+            50 N. Hopi Drive / PO Box 699<br>
+            Springerville, AZ 85938<br>
+            <abbr title="Phone">P:</abbr> (928) 333-2683
+            <abbr tittle="fax">F:</abbr> (928) 333-5595
+        </address>
+
+        <address>
+          <strong>St. Johns Office</strong><br>
+            470 W. Cleveland / PO Box 579<br>
+            St. Johns, AZ 85936<br>
+            <abbr title="Phone">P:</abbr> (928) 337-4301
+            <abbr tittle="fax">F:</abbr> (928) 337-2269
+        </address>
+        </div>
+        <div class="col-sm-4 text-center verticalLines">
+          8am - 5pm | Monday - Friday<br>
+          <strong> FOR AFTER HOURS CRISIS SERVICES<br>
+          Please call the office in your community</strong><br>
+          <br>
+          <img src="fullLogoWhite.png" alt="LITTLE COLORADO Behavioral Health Centers" style="height:50px; padding: 0 0 10px 0;">
+          <br>
+          <p class="text-center">Copyright &copy; 2016<br>
+            Little Colorado Behavioral Health Centers<br>
+            All Rights Reserved
+          </p>
+        </div>
+        <div class="col-sm-4 text-right">
+          <div class="media">
+              <div class="media-left media-middle">
+              <a href="https://www.jointcommission.org">
+                  <img class="media-object" src="JCAHO.png" alt="JCAHO" style="height:70px; padding-left:13px;">
+              </a>
+            </div>
+            <div class="media-body">
+              Accredited by the<br>
+              Joint Commission on Accreditation<br>
+              of Health Care Organizations<br>
+            </div>
+        </div>
+        <div class="media">
+              <div class="media-left media-middle">
+              <a href="#">
+                  <img class="media-object" src="ADHS.png" alt="ADHS" style="height:70px;">
+              </a>
+            </div>
+            <div class="media-body">
+              Licensed by the<br>
+              Arizona Department of Health Services<br>
+            </div>
+        </div>
+        </div>
+      </div>
+  </div>  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

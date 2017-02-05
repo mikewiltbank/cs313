@@ -1,0 +1,29 @@
+body {
+    background-image: url("brushed.png");
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.providerTable {
+	width:100%;
+}
+.providerTable td{
+	padding:10px;
+}
+
+#success_message{ display: none;}
+
+.footer {
+	padding-top: 10px;
+	background-color:#0F79C2;
+}
+
+.verticalLines {
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+
+#gradient > .vertical(#333; #000);
