@@ -75,54 +75,84 @@ $db = get_db();
 					
 
 					<div class="container">
-					  <h2>Suggest New Resource</h2>
-					  <form class="form-horizontal" action="action_page.php">
-					  	<div class="form-group">
-					  	  <label class="control-label col-sm-2" for="type">Type</label>
-					  	  <div class="col-sm-offset-2 col-sm-10">
-					  	    <div class="radio">
-					  	      <label><input type="radio">Public Resource</label>
-					  	      <label><input type="radio">Other Resource</label>
-					  	      <label><input type="radio">Local Contact</label>
-					  	    </div>
-					  	  </div>
-					  	</div>
-
+					  <h2>Suggest New Contact</h2>
+					  <form class="form-horizontal" action="insertContact.php">
 
 
 					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="email">Email:</label>
-					      <div class="col-sm-9">
-					        <input type="email" class="form-control" id="email" placeholder="Enter email">
+					      <label class="control-label col-sm-2" for="contactName">Contact Name:</label>
+					      <div class="col-sm-4">
+					        <input type="text" class="form-control" id="contactName" placeholder="Enter Name of Contact">
 					      </div>
 					    </div>
 
 					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="email">Link:</label>
-					      <div class="col-sm-9">
-					        <input type="url" class="form-control" id="link" placeholder="Enter resource link">
+					      <label class="control-label col-sm-2" for="phone">Phone Number:</label>
+					      <div class="col-sm-4">
+					        <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number">
 					      </div>
 					    </div>
-
-
-
 
 					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="pwd">Password:</label>
-					      <div class="col-sm-9">          
-					        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+					      <label class="control-label col-sm-2" for="address">Address:</label>
+					      <div class="col-sm-4">          
+					        <input type="text" class="form-control" id="address" placeholder="Enter Address">
 					      </div>
 					    </div>
-					    <div class="form-group">        
-					      <div class="col-sm-offset-2 col-sm-10">
+
+					    <div class="form-group">
+					      <label class="control-label col-sm-2" for="city">City:</label>
+					      <div class="col-sm-4">          
+					        <input type="text" class="form-control" id="city" placeholder="Enter City">
+					      </div>
+					    </div>
+
+					    <div class="form-group">
+					      <label class="control-label col-sm-2" for="state">State:</label>
+					      <div class="col-sm-4">          
+					        <input type="text" class="form-control" id="state" placeholder="Enter State">
+					      </div>
+					    </div>
+
+					    <div class="form-group">
+					      <label class="control-label col-sm-2" for="zip">Zip:</label>
+					      <div class="col-sm-4">          
+					        <input type="text" class="form-control" id="zip" placeholder="Enter Zip Code">
+					      </div>
+					    </div>
+
+					    <div class="form-group">
+					      <label class="control-label col-sm-2" for="searchWord">Associations:</label>
+					      <div class="col-sm-4">
 					        <div class="checkbox">
-					          <label><input type="checkbox"> Remember me</label>
-					        </div>
-					      </div>
-					    </div>
+						      <label><input type="checkbox" value="Depression">Depression</label>
+						    </div>
+						    <div class="checkbox">
+						      <label><input type="checkbox" value="Anxiety">Anxiety</label>
+						    </div>
+						    <div class="checkbox">
+						      <label><input type="checkbox" value="Trauma">Trauma</label>
+						    </div>
+						    <div class="checkbox">
+						      <label><input type="checkbox" value="Developmental">Developmental</label>
+						    </div>
+						    <div class="checkbox">
+						      <label><input type="checkbox" value="Criminal">Criminal</label>
+						    </div>
+						    <div class="checkbox">
+						      <label><input type="checkbox" value="Substance">Substance Abuse</label>
+						    </div>
+						    <!--						    
+						    <div class="checkbox disabled">
+						      <label><input type="checkbox" value="" disabled>Substance Abuse</label>
+						    </div>
+						    -->
+						  </div>
+						</div>
+
 					    <div class="form-group">        
 					      <div class="col-sm-offset-2 col-sm-10">
-					        <button type="submit" class="btn btn-default">Submit</button>
+					        <button type="submit" class="btn btn-default">Submit For Approval</button>
 					      </div>
 					    </div>
 					  </form>
