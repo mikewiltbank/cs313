@@ -40,7 +40,7 @@ $db = get_db();
 			        <li><a href="careandservices.html">Care & Services</a></li>
 			        <li><a href="insuranceandpayment.html">Insurance & Payment</a></li>
 			        <li><a href="jobopenings.html">Job Openings</a></li>
-			        <li class="active"><a href="resources.html">Resources <span class="sr-only">(current)</span></a></li>
+			        <li class="active"><a href="resources.php">Resources <span class="sr-only">(current)</span></a></li>
 			        <!--
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
