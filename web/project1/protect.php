@@ -7,6 +7,6 @@ if($pass == "admin")
 }
 else
 {
-	header('Location:resources.html');
+	header('Location:employeeportal.html');
 }
 ?>
