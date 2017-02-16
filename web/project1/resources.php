@@ -116,15 +116,13 @@ require("dbConnect.php");
 			</div>
 
 			<div class="row">
-				<div class="col-sm-2 col-xs-12">
-				</div>
-				<div class="col-sm-5 col-xs-12">
+				<div class="col-sm-7 col-xs-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title text-center">Local Contacts</h3>
 						</div>
 						<div class="panel-body">
-							<table class="table">>
+							<table class="table">
 							   <thead>
 							    <tr>
 							     <th>Name</th>
