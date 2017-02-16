@@ -132,13 +132,14 @@ require("dbConnect.php");
 							   </thead>
 							   <tbody>
 							    <?php
-							    $query = "SELECT id, name, address, service "
+							    $query = "SELECT id, name, address, phone, service "
 							        . "FROM contactresource ORDER BY name ASC";
 							    $result = $db->query($query);
 							    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
 							        echo "<tr>";
 							        echo "<td>" . htmlspecialchars($row["name"]) . "</td>";
 							        echo "<td>" . htmlspecialchars($row["address"]) . "</td>";
+							        echo "<td>" . htmlspecialchars($row["phone"]) . "</td>";
 							        echo "<td>" . htmlspecialchars($row["service"]) . "</td>";
 							        echo "</tr>";
 							    }
