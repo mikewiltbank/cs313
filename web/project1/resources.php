@@ -124,7 +124,7 @@ require("dbConnect.php");
 							<h3 class="panel-title text-center">Local Contacts</h3>
 						</div>
 						<div class="panel-body">
-							<table>
+							<table class="table">>
 							   <thead>
 							    <tr>
 							     <th>Name</th>
