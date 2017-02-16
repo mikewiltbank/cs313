@@ -29,6 +29,6 @@ catch (Exception $ex)
 	die();
 }
 
-header("Location: resources.html");
+header("Location: resources.php");
 die(); 
 ?>

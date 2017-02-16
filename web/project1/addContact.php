@@ -103,32 +103,27 @@ $db = get_db();
 	              <div class="form-group">
 	                <label class="control-label col-sm-2" for="service">Primary Service:</label>
 	                <div class="col-sm-4">
-	                  <div class="radio">
-	                  <label><input type="radio" name="service" value="General Mental Health">General Mental Health</label>
-	                </div>
-	                <div class="col-sm-4">
-	                  <div class="radio">
-	                  <label><input type="radio" name="service" value="Counseling">Counseling</label>
-	                </div>
-	                <div class="radio">
-	                  <label><input type="radio" name="service" value="Trauma">Trauma</label>
-	                </div>
-	                <div class="radio">
-	                  <label><input type="radio" name="service" value="Developmental">Developmental</label>
-	                </div>
-	                <div class="radio">
-	                  <label><input type="radio" name="service" value="Criminal">Criminal</label>
-	                </div>
-	                <div class="radio">
-	                  <label><input type="radio" name="service" value="Substance Abuse">Substance Abuse</label>
-	                </div>
-	                <!--                
-	                <div class="checkbox disabled">
-	                  <label><input type="checkbox" value="" disabled>Substance Abuse</label>
-	                </div>
-	                -->
+		                <div class="radio">
+		                  <label><input type="radio" name="service" value="General Mental Health">General Mental Health</label>
+		                </div>
+		                <div class="radio">
+		                  <label><input type="radio" name="service" value="Counseling">Counseling</label>
+		                </div>
+		                <div class="radio">
+		                  <label><input type="radio" name="service" value="Trauma">Trauma</label>
+		                </div>
+		                <div class="radio">
+		                  <label><input type="radio" name="service" value="Developmental">Developmental</label>
+		                </div>
+		                <div class="radio">
+		                  <label><input type="radio" name="service" value="Criminal">Criminal</label>
+		                </div>
+		                <div class="radio">
+		                  <label><input type="radio" name="service" value="Substance Abuse">Substance Abuse</label>
+		                </div>
+		            </div>
 	              </div>
-	            </div>
+	            </div><br>
 
 	              <div class="form-group">        
 	                <div class="col-sm-offset-2 col-sm-10">
