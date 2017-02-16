@@ -157,13 +157,13 @@ require("dbConnect.php");
 					<div class="row">
 						<div class="col-sm-2"></div>
 						<div class="col-sm-2">
-							<a href="addResource.html">
+							<a href="addResource.php">
 								<button type="button" class="btn btn-primary">Link Resource</button>
 							</a>
 						</div>
 						<div class="col-sm-3"></div>
 						<div class="col-sm-2">
-							<a href="addContact.html">
+							<a href="addContact.php">
 								<button type="button" class="btn btn-primary">Local Contact</button>
 							</a>
 						</div>

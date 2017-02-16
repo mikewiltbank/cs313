@@ -101,27 +101,6 @@ $db = get_db();
 					    </div>
 
 					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="city">City:</label>
-					      <div class="col-sm-4">          
-					        <input type="text" class="form-control" id="city" placeholder="Enter City">
-					      </div>
-					    </div>
-
-					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="state">State:</label>
-					      <div class="col-sm-4">          
-					        <input type="text" class="form-control" id="state" placeholder="Enter State">
-					      </div>
-					    </div>
-
-					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="zip">Zip:</label>
-					      <div class="col-sm-4">          
-					        <input type="text" class="form-control" id="zip" placeholder="Enter Zip Code">
-					      </div>
-					    </div>
-
-					    <div class="form-group">
 					      <label class="control-label col-sm-2" for="searchWord">Associations:</label>
 					      <div class="col-sm-4">
 					        <div class="checkbox">
