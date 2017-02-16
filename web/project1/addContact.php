@@ -70,78 +70,79 @@ $db = get_db();
 			  </div><!-- /.container-fluid -->
 			</nav><!-- /navbar -->
 		
-			<div class="row">
-				<div class="col-sm-12 col-xs-12">
-					
+		<div class="row">
+	        <div class="col-sm-12 col-xs-12">
+	          
 
-					<div class="container">
-					  <h2>Suggest New Contact</h2>
-					  <form class="form-horizontal" action="insertContact.php">
-
-
-					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="contactName">Contact Name:</label>
-					      <div class="col-sm-4">
-					        <input type="text" class="form-control" id="contactName" placeholder="Enter Name of Contact">
-					      </div>
-					    </div>
-
-					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="phone">Phone Number:</label>
-					      <div class="col-sm-4">
-					        <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number">
-					      </div>
-					    </div>
-
-					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="address">Address:</label>
-					      <div class="col-sm-4">          
-					        <input type="text" class="form-control" id="address" placeholder="Enter Address">
-					      </div>
-					    </div>
-
-					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="searchWord">Associations:</label>
-					      <div class="col-sm-4">
-					        <div class="checkbox">
-						      <label><input type="checkbox" value="Depression">Depression</label>
-						    </div>
-						    <div class="checkbox">
-						      <label><input type="checkbox" value="Anxiety">Anxiety</label>
-						    </div>
-						    <div class="checkbox">
-						      <label><input type="checkbox" value="Trauma">Trauma</label>
-						    </div>
-						    <div class="checkbox">
-						      <label><input type="checkbox" value="Developmental">Developmental</label>
-						    </div>
-						    <div class="checkbox">
-						      <label><input type="checkbox" value="Criminal">Criminal</label>
-						    </div>
-						    <div class="checkbox">
-						      <label><input type="checkbox" value="Substance">Substance Abuse</label>
-						    </div>
-						    <!--						    
-						    <div class="checkbox disabled">
-						      <label><input type="checkbox" value="" disabled>Substance Abuse</label>
-						    </div>
-						    -->
-						  </div>
-						</div>
-
-					    <div class="form-group">        
-					      <div class="col-sm-offset-2 col-sm-10">
-					        <button type="submit" class="btn btn-default">Submit For Approval</button>
-					      </div>
-					    </div>
-					  </form>
-					</div>
+	          <div class="container">
+	            <h2>Suggest New Contact</h2>
+	            <form class="form-horizontal" action="insertContact.php" method="post">
 
 
+	              <div class="form-group">
+	                <label class="control-label col-sm-2" for="contactName">Contact Name:</label>
+	                <div class="col-sm-4">
+	                  <input type="text" class="form-control" id="contactName" name="contactName" placeholder="Enter Name of Contact">
+	                </div>
+	              </div>
+
+	              <div class="form-group">
+	                <label class="control-label col-sm-2" for="contactPhone">Phone Number:</label>
+	                <div class="col-sm-4">
+	                  <input type="tel" class="form-control" id="contactPhone" name="contactPhone" placeholder="Enter Phone Number">
+	                </div>
+	              </div>
+
+	              <div class="form-group">
+	                <label class="control-label col-sm-2" for="contactAddress">Address:</label>
+	                <div class="col-sm-4">          
+	                  <input type="text" class="form-control" id="contactAddress" name="contactAddress" placeholder="Enter Address">
+	                </div>
+	              </div>
+
+	              <div class="form-group">
+	                <label class="control-label col-sm-2" for="service">Primary Service:</label>
+	                <div class="col-sm-4">
+	                  <div class="radio">
+	                  <label><input type="radio" name="service" value="General Mental Health">General Mental Health</label>
+	                </div>
+	                <div class="col-sm-4">
+	                  <div class="radio">
+	                  <label><input type="radio" name="service" value="Counseling">Counseling</label>
+	                </div>
+	                <div class="radio">
+	                  <label><input type="radio" name="service" value="Trauma">Trauma</label>
+	                </div>
+	                <div class="radio">
+	                  <label><input type="radio" name="service" value="Developmental">Developmental</label>
+	                </div>
+	                <div class="radio">
+	                  <label><input type="radio" name="service" value="Criminal">Criminal</label>
+	                </div>
+	                <div class="radio">
+	                  <label><input type="radio" name="service" value="Substance Abuse">Substance Abuse</label>
+	                </div>
+	                <!--                
+	                <div class="checkbox disabled">
+	                  <label><input type="checkbox" value="" disabled>Substance Abuse</label>
+	                </div>
+	                -->
+	              </div>
+	            </div>
+
+	              <div class="form-group">        
+	                <div class="col-sm-offset-2 col-sm-10">
+	                  <button type="submit" class="btn btn-default">Submit For Approval</button>
+	                </div>
+	              </div>
+	            </form>
+	          </div>
 
 
-				</div>
-			</div>
+
+
+	        </div>
+	      </div>
 	    </div> <!-- /container -->
 	</div> <!-- /body -->
 
