@@ -150,7 +150,7 @@ require("dbConnect.php");
 						</div>
 					</div>
 				</div> 
-				<div class="col-sm-5 col-xs-12">
+				<div class="col-sm-5 col-xs-12"><br><br>
 					<h3 class="text-center">Suggest New Resource</h3>
 					<p class="text-center">Please share any useful resource information that we have missed.</p>
 					<div class="row">
