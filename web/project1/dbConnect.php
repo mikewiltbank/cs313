@@ -1,4 +1,4 @@
-<?php
+<!--<?php
 $dsn = "pgsql:"
     . "host=ec2-54-243-197-180.compute-1.amazonaws.com;"
     . "dbname=d1icv6q84sdjv7;"
@@ -11,7 +11,7 @@ $db = new PDO($dsn);
 ?>
 
 
-<!--<?php
+<?php
 try
 {
   $user = 'wbsbfhpjjylesi';
@@ -23,7 +23,7 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-?>
+?>-->
 
 <?php
 function get_db() {
@@ -47,4 +47,4 @@ function get_db() {
 	}
 	return $db;
 }
-?>-->
+?>
