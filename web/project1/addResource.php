@@ -70,120 +70,83 @@ $db = get_db();
 			  </div><!-- /.container-fluid -->
 			</nav><!-- /navbar -->
 		
+
+
 			<div class="row">
-				<div class="col-sm-12 col-xs-12">
-					
+		        <div class="col-sm-12 col-xs-12">
+		          
 
-					<div class="container">
-					  <h2>Suggest New Resource</h2>
-					  <form class="form-horizontal" action="insertResource.php" method="POST">
-
-
-					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="resourceName">Resource Name:</label>
-					      <div class="col-sm-9">
-					        <input type="text" class="form-control" id="resourceName" placeholder="Enter Name of Resource">
-					      </div>
-					    </div>
-
-					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="resourceLink">Resource Link:</label>
-					      <div class="col-sm-9">
-					        <input type="url" class="form-control" id="resourceLink" placeholder="Enter Link to Resource">
-					      </div>
-					    </div>
-
-					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="resourceType">Resource Type:</label>
-					      <div class="col-sm-9">
-				            <label class="radio-inline">
-					          <input type="radio" name="optradio" id="resourceType">Community Resource
-					        </label>
-					        <label class="radio-inline">
-					          <input type="radio" name="optradio" id="resourceType" checked>Other Resource
-					        </label>
-					      </div>
-					    </div>
+		          <div class="container">
+		            <h2>Suggest New Resource</h2>
+		            <form class="form-horizontal" action="insertContact.php" method="POST">
 
 
-					    <div class="form-group">
-					      <label class="control-label col-sm-2" for="searchWord">Associations:</label>
-					      <div class="col-sm-9">
+		              <div class="form-group">
+		                <label class="control-label col-sm-2" for="resourceName">Resource Name:</label>
+		                <div class="col-sm-9">
+		                  <input type="text" class="form-control" id="resourceName" name="resourceName" placeholder="Enter Name of Resource">
+		                </div>
+		              </div>
+
+		              <div class="form-group">
+		                <label class="control-label col-sm-2" for="resourceLink">Resource Link:</label>
+		                <div class="col-sm-9">
+		                  <input type="url" class="form-control" id="resourceLink" name="resourceLink" placeholder="Enter Link to Resource">
+		                </div>
+		              </div>
+
+		              <div class="form-group">
+		                <label class="control-label col-sm-2" for="resourceType">Resource Type:</label>
+		                <div class="col-sm-9">
+		                    <label class="radio-inline">
+		                    <input type="radio" name="resourceType" id="resourceType" value="community">Community Resource
+		                  </label>
+		                  <label class="radio-inline">
+		                    <input type="radio" name="resourceType" id="resourceType" value="Other"checked>Other Resource
+		                  </label>
+		                </div>
+		              </div>
 
 
-					      <!--
-					        <?php
-							try
-							{
-								$statement = $db->prepare('SELECT id, name FROM association');
-								$statement->execute();
-								while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-								{
-									$id = $row['id'];
-									$name = $row['name'];
-									echo "<div class='checkbox'>";
-									echo "<input type='checkbox' name='associationName[]' id='associationName$id' value='$id'>";
-									echo "<label for='associationName$id'>$name</label><br />";
-									echo "\n";
-								}
-							}
-							catch (PDOException $ex)
-							{
-								echo "Error connecting to DB. Details: $ex";
-								die();
-							}
-							?>
-					  	   -->
+		              <div class="form-group">
+		                <label class="control-label col-sm-2" for="associationNames">Associations:</label>
+		                <div class="col-sm-9">                
+		                  <?php
+		                  try
+		                  {
+		                    $statement = $db->prepare('SELECT id, name FROM association');
+		                    $statement->execute();
+		                    while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+		                    {
+		                      $id = $row['id'];
+		                      $name = $row['name'];
+		                      echo "<div class='checkbox'>";
+		                      echo "<input type='checkbox' name='associationNames[]' id='associationNames$id' value='$id'>";
+		                      echo "<label for='associationNames$id'>$name</label></div>";
+		                      echo "\n";
+		                    }
+		                  }
+		                  catch (PDOException $ex)
+		                  {
+		                    echo "Error connecting to DB. Details: $ex";
+		                    die();
+		                  }
+		                  ?>
+		              </div>
+		            </div>
+
+		              <div class="form-group">        
+		                <div class="col-sm-offset-2 col-sm-10">
+		                  <button type="submit" class="btn btn-default">Submit For Approval</button>
+		                </div>
+		              </div>
+		            </form>
+		          </div>
 
 
-					        <div class="checkbox">
-						      <label><input type="checkbox" value="Depression">Depression</label>
-						    </div>
-						    <div class="checkbox">
-						      <label><input type="checkbox" value="Anxiety">Anxiety</label>
-						    </div>
-						    <div class="checkbox">
-						      <label><input type="checkbox" value="Trauma">Trauma</label>
-						    </div>
-						    <div class="checkbox">
-						      <label><input type="checkbox" value="Developmental">Developmental</label>
-						    </div>
-						    <div class="checkbox">
-						      <label><input type="checkbox" value="Criminal">Criminal</label>
-						    </div>
-						    <div class="checkbox">
-						      <label><input type="checkbox" value="Substance">Substance Abuse</label>
-						    </div>
-						    <!--						    
-						    <div class="checkbox disabled">
-						      <label><input type="checkbox" value="" disabled>Substance Abuse</label>
-						    </div>
-						    -->
-						  </div>
-						</div>
+		        </div>
+		    </div>
 
-
-					    <!--
-					    <div class="form-group">        
-					      <div class="col-sm-offset-2 col-sm-10">
-					        <div class="checkbox">
-					          <label><input type="checkbox"> Remember me</label>
-					        </div>
-					      </div>
-					    </div>
-					    -->
-
-					    <div class="form-group">        
-					      <div class="col-sm-offset-2 col-sm-10">
-					        <button type="submit" class="btn btn-default">Submit For Approval</button>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-
-
-				</div>
-			</div>
 	    </div> <!-- /container -->
 	</div> <!-- /body -->
 

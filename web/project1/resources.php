@@ -84,7 +84,7 @@ require("dbConnect.php");
 							  	<?php
 								  foreach ($db->query('SELECT * FROM communityresource') as $row)
 								  {
-								    echo "<li><a href=\'".$row['link']."\'>".$row['name']."</a></li>";
+								    echo "<li><a href='".$row['link']."'>".$row['name']."</a></li>";
 								  }
 								?>
 							</ul>
@@ -105,7 +105,7 @@ require("dbConnect.php");
 								<?php
 								  foreach ($db->query('SELECT * FROM otherresource') as $row)
 								  {
-								    echo "<li><a href=\'".$row['link']."\'>".$row['name']."</a></li>";
+								    echo "<li><a href='".$row['link']."'>".$row['name']."</a></li>";
 								  }
 								?>
 								<br><br>
@@ -127,6 +127,7 @@ require("dbConnect.php");
 							    <tr>
 							     <th>Name</th>
 							     <th>Address</th>
+							     <th>Phone</th>
 							     <th>Service</th>
 							    </tr>
 							   </thead>

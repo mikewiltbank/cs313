@@ -3,42 +3,81 @@
 $name = $_POST['resourceName'];
 $link = $_POST['resourceLink'];
 $type = $_POST['resourceType'];
-$associationIds = $_POST['associationName'];
+$associations = $_POST['associationNames'];
 
-// echo "name=$name\n";
-// echo "link=$link\n";
-// echo "type=$type\n";
+ //echo "name=$name"."<br>";
+ //echo "link=$link"."<br>";
+ //echo "type=$type"."<br>";
+ //foreach ($associations as $association)
+ //{
+ 	//echo "association=$association";
+ 	//echo "<br";
+ //}
 
 require("dbConnect.php");
-$db = get_db();
-try
+
+if($type == "other")
 {
-	$query = 'INSERT INTO communityresource(name, link) VALUES(:name, :link)';
-	$statement = $db->prepare($query);
-
-	$statement->bindValue(':name', $name);
-	$statement->bindValue(':link', $link);
-	$statement->execute();
-
-	$resourceId = $db->lastInsertId("communityresource_id_seq");
-
-	foreach ($associationIds as $associationId)
+	try
 	{
-		echo "Communityid: $communityid, Otherid: $otherid, Contactid: $contactid";
-		$statement = $db->prepare('INSERT INTO resource_association(communityid, otherid, contactid) VALUES(:communityid, :otherid), :contactid');
+		$query = 'INSERT INTO otherresource(name, link) VALUES(:name, :link)';
+		$statement = $db->prepare($query);
 
-		$statement->bindValue(':communityid', $communityid);
-		$statement->bindValue(':otherid', $otherid);
-		$statement->bindValue(':contactid', $contactid);
+		$statement->bindValue(':name', $name);
+		$statement->bindValue(':link', $link);
 		$statement->execute();
+
+		$otherid = $db->lastInsertId("otherresource_id_seq");
+
+		foreach ($associations as $association)
+		{
+			$statement = $db->prepare('INSERT INTO resource_association(communityid, otherid, associationid) VALUES(:communityid, :otherid, :associationid)');
+
+		//	$statement->bindValue(':communityid', $communityid);
+			$statement->bindValue(':otherid', $otherid);
+			$statement->bindValue(':associationid', $associationid);
+			$statement->execute();
+		}
 	}
-}
-catch (Exception $ex)
-{
-	echo "Error with DB. Details: $ex";
+	catch (Exception $ex)
+	{
+		echo "Error with DB. Details: $ex";
+		die();
+	}
+	header("Location: resources.html");
 	die();
 }
 
-header("Location: resources.html");
-die(); 
+if($type == "community")
+{
+	try
+	{
+		$query = 'INSERT INTO communityresource(name, link) VALUES(:name, :link)';
+		$statement = $db->prepare($query);
+
+		$statement->bindValue(':name', $name);
+		$statement->bindValue(':link', $link);
+		$statement->execute();
+
+		$otherid = $db->lastInsertId("communityresource_id_seq");
+
+		foreach ($associations as $association)
+		{
+			$statement = $db->prepare('INSERT INTO resource_association(communityid, otherid, associationid) VALUES(:communityid, :otherid, :associationid)');
+
+			$statement->bindValue(':communityid', $communityid);
+		//	$statement->bindValue(':otherid', $otherid);
+			$statement->bindValue(':associationid', $associationid);
+			$statement->execute();
+		}
+	}
+	catch (Exception $ex)
+	{
+		echo "Error with DB. Details: $ex";
+		die();
+	}
+	header("Location: resources.html");
+	die();
+}
+
 ?>
