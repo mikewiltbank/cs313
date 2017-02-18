@@ -131,7 +131,7 @@ $db = get_db();
 	                </div>
 	              </div>
 	            </form>
-	          </div>
+	          </div><br>
 
 
 

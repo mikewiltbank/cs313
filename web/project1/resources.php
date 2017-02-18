@@ -108,7 +108,6 @@ require("dbConnect.php");
 								    echo "<li><a href='".$row['link']."'>".$row['name']."</a></li>";
 								  }
 								?>
-								<br><br>
 							</ul>
 						</div>
 					</div>
