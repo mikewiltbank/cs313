@@ -78,7 +78,7 @@ $db = get_db();
 
 		          <div class="container">
 		            <h2>Suggest New Resource</h2>
-		            <form class="form-horizontal" action="insertContact.php" method="POST">
+		            <form class="form-horizontal" action="insertResource.php" method="POST">
 
 
 		              <div class="form-group">
