@@ -44,7 +44,7 @@ if($type == "other")
 		echo "Error with DB. Details: $ex";
 		die();
 	}
-	header("Location: resources.html");
+	header("Location: resources.php");
 	die();
 }
 
@@ -76,7 +76,7 @@ if($type == "community")
 		echo "Error with DB. Details: $ex";
 		die();
 	}
-	header("Location: resources.html");
+	header("Location: resources.php");
 	die();
 }
 
