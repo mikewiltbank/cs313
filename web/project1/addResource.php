@@ -102,7 +102,7 @@ $db = get_db();
 		                    <input type="radio" name="resourceType" id="resourceType" value="community">Community Resource
 		                  </label>
 		                  <label class="radio-inline">
-		                    <input type="radio" name="resourceType" id="resourceType" value="Other"checked>Other Resource
+		                    <input type="radio" name="resourceType" id="resourceType" value="other"checked>Other Resource
 		                  </label>
 		                </div>
 		              </div>
